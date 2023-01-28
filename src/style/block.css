@@ -59,10 +59,14 @@
 }
 
 .frameColumn {
+  width: 100%;
+  height: 150px;
   float: left;
+  background-color: #292828;
   overflow-x: scroll;
   overflow-y: visible;
-  position: relative;
+  position: fixed;
+  left: 100px;
 }
 
 .obj {

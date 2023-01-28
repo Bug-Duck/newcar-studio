@@ -2,7 +2,8 @@
   letter-spacing: "1px";
   margin: 1px;
   width: 100px;
-  font-family: sans-serif
+  font-family: sans-serif;
+  user-select: none;
 }
 
 .objectItem:hover {
