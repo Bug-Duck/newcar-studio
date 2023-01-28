@@ -1,0 +1,14 @@
+.objectItem {
+  letter-spacing: "1px";
+  margin: 1px;
+  width: 100px;
+  font-family: sans-serif
+}
+
+.objectItem:hover {
+  background-color: #2f2f2f;
+}
+
+.objectItem:active {
+  background-color: skyblue;
+}
