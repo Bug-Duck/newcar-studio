@@ -2,7 +2,7 @@
   "name": "newcar-editor",
   "version": "0.1.0",
   "description": "A editor for an animation engine named newcar",
-  "main": "main.js",
+  "main": "src/electron/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Bug-Duck/newcar-editor#readme",
   "dependencies": {
     "electron": "^22.1.0"
+  },
+  "devDependencies": {
+    "@electron/remote": "^2.0.9"
   }
 }
