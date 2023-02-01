@@ -1,5 +1,4 @@
-const { app, BrowserWindow, Menu } = require("electron");
-// const ChildBrowserWindow = require("@electron/remote");
+const { app, BrowserWindow } = require("electron");
 
 class mainWindow extends BrowserWindow {
   constructor() {
@@ -7,19 +6,13 @@ class mainWindow extends BrowserWindow {
       show: false,
       webPreferences: {
         nodeIntegration: true,
+        contextIsolation: false,
       },
+      minHeight: 400,
+      minWidth: 600
     });
   }
 }
-
-// class newFileWindow extends ChildBrowserWindow {
-//   constructor() {
-//     super({
-//       width: 800,
-//       height: 600,
-//     });
-//   }
-// }
 
 app.whenReady().then(() => {
   const mainWin = new mainWindow();
@@ -28,16 +21,6 @@ app.whenReady().then(() => {
   mainWin.maximize();
   mainWin.show();
   mainWin.loadFile("src/index.html");
-  const topMenus = Menu.buildFromTemplate([
-    {
-      label: "File",
-      submenu: [
-        {
-          label: "New Project",
-          onclick: () => {},
-        },
-      ],
-    },
-  ]);
-  Menu.setApplicationMenu(topMenus);
+
+  require("./menu.js");
 });

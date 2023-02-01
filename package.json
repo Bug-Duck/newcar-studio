@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/Bug-Duck/newcar-editor#readme",
   "dependencies": {
-    "electron": "^22.1.0"
+    "electron": "^22.1.0",
+    "node-stream-zip": "^1.15.0"
   },
   "devDependencies": {
     "@electron/remote": "^2.0.9"

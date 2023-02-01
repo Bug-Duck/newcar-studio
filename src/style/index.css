@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #00000040;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255, 1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+button {
+  background-color: #5a5a5a;
+  border-radius: 10px;
+  border-color: #5a5a5a;
+  color: white;
+  font-family: sans-serif;
+}
+
+input {
+  background-color: #5a5a5a;
+  border-radius: 10px;
+  border-color: #5a5a5a;
+  color: white;
+  font-family: sans-serif;
+  kerning: auto;
+}
